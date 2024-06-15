@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.conteiner> h1,h2{
+    font-size: 32px;
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #2d102c;
+    text-align: center;
+}
+
+.conteiner h2{
+    font-size: 24px;
+}
+
+.conteiner{
+    position:absolute;
+    background: #ecd8e9;
+    margin: 50px 50px 50px 50px;
+    padding: 0px;
+}
+
+.conteiner p{
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #2d102c;
+    margin: 20px 30px 20px 30px;
+    text-indent: 20px;
+}
+
+.autor{
+    font-style: italic;    
+    font-size: 15px;
+    text-align: right;
+    color: #704660;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px 30px 20px 30px;
+}
+
+.reference{
+    font-style: italic;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    float: right;
+    color: #704660;
+    margin-right: 50px;
+    margin-top: 25px;
+}
+
+.rightCat{
+    max-width: 200px;
+    float: right;
+    margin-right: 50px;
+    margin-left: 10px;
+}
+
+.content h2{
+    font-size: 20px;
+    text-align: left;
+    margin: 20px 30px 20px 30px;
+    padding-bottom: 0;
+}
+
+.content ul>li{
+    list-style:circle;
+    font-size: 18px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #2d102c;
+    margin: 20px 30px 0px 50px;
+}
+
+.autorization{
+    background: #ecd8e9;
+    position:absolute;
+    text-align: center;
+    margin: 200px 600px;
+    padding: 0px;
+    padding: 50px;
+}
+
+.autorization button{
+    background: #704660;
+    color: #ecd8e9;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 32px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.autorization button:hover{
+    background-color:  #885b77;
+}
+
+.input-group input{
+    border: none;
+    background: transparent;
+    border-bottom:#2d102c solid 2px;
+    margin: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 32px;
+    color: #2d102c;
+}
+
+
+.input-group input:hover{
+    border-bottom-color: #885b77;
+}
+
+
+
+.autorization svg>path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    stroke: #704660; 
+    animation: draw 10s linear infinite;
+}
+
+@keyframes draw {
+    0% {
+        stroke-dashoffset: 1000;
+    }
+    50% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: 1000;
+    }
+}
+
+.autorization svg>path.reverse {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+    animation: erase 10s linear infinite;
+}
+
+@keyframes erase {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dashoffset: 1000;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
